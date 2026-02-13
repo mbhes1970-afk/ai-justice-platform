@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
-import { MODULES, RECORDING_PROMPTS } from '../data/modules';
-import { sendToMistral } from '../utils/mistral';
+import { MODULES } from '../data/modules';
+import { sendToMistral, RECORDING_PROMPTS } from '../utils/mistral';
 import { createRecognition, createContinuousRecognition, speak, stopSpeaking, isSpeechSupported } from '../utils/speech';
 
 export default function Chat({ moduleId, lang, mode }) {
